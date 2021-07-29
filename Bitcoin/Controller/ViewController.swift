@@ -48,6 +48,7 @@ extension ViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return bitcoinManager.currencyArray.count
     }
+    
  
     
 }
@@ -55,7 +56,20 @@ extension ViewController: UIPickerViewDataSource {
 extension ViewController: UIPickerViewAccessibilityDelegate {
     // picked the title from currencyArray
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        print(bitcoinManager.currencyArray[row])
+        
+        // return current row in array
         return bitcoinManager.currencyArray[row]
+       
     }
+    // created function to get data of selected row
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        
+        let selectRow = bitcoinManager.currencyArray[row]
+        bitcoinManager.getBitcoinPrice(selectRow)
+    }
+    
+
     
 }

@@ -14,4 +14,8 @@ struct BitcoinManager {
     
     let currencyArray = ["UAH", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     
+    // added function to get selected data of row from ViewController
+    func getBitcoinPrice(_ currency: String) {
+        print("selected currency is \(currency)")
+    }
 }
