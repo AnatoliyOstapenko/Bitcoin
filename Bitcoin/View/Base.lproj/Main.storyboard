@@ -143,6 +143,11 @@
                             <constraint firstItem="INv-Sc-KUZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m1Y-JN-iS5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currencyLabel" destination="xE6-Jj-nFK" id="BfZ-fj-l5x"/>
+                        <outlet property="currencyPicker" destination="boP-St-VZT" id="X0W-0q-1JX"/>
+                        <outlet property="sumLabel" destination="A6t-py-Ebw" id="49B-za-dje"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

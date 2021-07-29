@@ -14,6 +14,7 @@
 		FABCBD2426B30A4500D9B7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2326B30A4500D9B7D4 /* Assets.xcassets */; };
 		FABCBD2726B30A4500D9B7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2526B30A4500D9B7D4 /* LaunchScreen.storyboard */; };
 		FABCBD3026B30A5900D9B7D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2F26B30A5900D9B7D4 /* README.md */; };
+		FABCBD3626B33C5700D9B7D4 /* BitcoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCBD3526B33C5700D9B7D4 /* BitcoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FABCBD2626B30A4500D9B7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABCBD2826B30A4500D9B7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCBD2F26B30A5900D9B7D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FABCBD3526B33C5700D9B7D4 /* BitcoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				FABCBD1A26B30A4100D9B7D4 /* AppDelegate.swift */,
 				FABCBD1C26B30A4200D9B7D4 /* SceneDelegate.swift */,
+				FABCBD3826B33C6400D9B7D4 /* Model */,
 				FABCBD3226B30A6300D9B7D4 /* View */,
 				FABCBD3326B30A7800D9B7D4 /* Controller */,
 				FABCBD2326B30A4500D9B7D4 /* Assets.xcassets */,
@@ -84,6 +87,14 @@
 				FABCBD1E26B30A4200D9B7D4 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FABCBD3826B33C6400D9B7D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FABCBD3526B33C5700D9B7D4 /* BitcoinManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			files = (
 				FABCBD1F26B30A4200D9B7D4 /* ViewController.swift in Sources */,
 				FABCBD1B26B30A4200D9B7D4 /* AppDelegate.swift in Sources */,
+				FABCBD3626B33C5700D9B7D4 /* BitcoinManager.swift in Sources */,
 				FABCBD1D26B30A4200D9B7D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
