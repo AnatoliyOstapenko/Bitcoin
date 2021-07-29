@@ -13,6 +13,7 @@
 		FABCBD2226B30A4200D9B7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2026B30A4200D9B7D4 /* Main.storyboard */; };
 		FABCBD2426B30A4500D9B7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2326B30A4500D9B7D4 /* Assets.xcassets */; };
 		FABCBD2726B30A4500D9B7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2526B30A4500D9B7D4 /* LaunchScreen.storyboard */; };
+		FABCBD3026B30A5900D9B7D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FABCBD2F26B30A5900D9B7D4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FABCBD2326B30A4500D9B7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABCBD2626B30A4500D9B7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABCBD2826B30A4500D9B7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABCBD2F26B30A5900D9B7D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		FABCBD0E26B30A4100D9B7D4 = {
 			isa = PBXGroup;
 			children = (
+				FABCBD2F26B30A5900D9B7D4 /* README.md */,
 				FABCBD1926B30A4100D9B7D4 /* Bitcoin */,
 				FABCBD1826B30A4100D9B7D4 /* Products */,
 			);
@@ -58,13 +61,29 @@
 			children = (
 				FABCBD1A26B30A4100D9B7D4 /* AppDelegate.swift */,
 				FABCBD1C26B30A4200D9B7D4 /* SceneDelegate.swift */,
-				FABCBD1E26B30A4200D9B7D4 /* ViewController.swift */,
-				FABCBD2026B30A4200D9B7D4 /* Main.storyboard */,
+				FABCBD3226B30A6300D9B7D4 /* View */,
+				FABCBD3326B30A7800D9B7D4 /* Controller */,
 				FABCBD2326B30A4500D9B7D4 /* Assets.xcassets */,
 				FABCBD2526B30A4500D9B7D4 /* LaunchScreen.storyboard */,
 				FABCBD2826B30A4500D9B7D4 /* Info.plist */,
 			);
 			path = Bitcoin;
+			sourceTree = "<group>";
+		};
+		FABCBD3226B30A6300D9B7D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FABCBD2026B30A4200D9B7D4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FABCBD3326B30A7800D9B7D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FABCBD1E26B30A4200D9B7D4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			files = (
 				FABCBD2726B30A4500D9B7D4 /* LaunchScreen.storyboard in Resources */,
 				FABCBD2426B30A4500D9B7D4 /* Assets.xcassets in Resources */,
+				FABCBD3026B30A5900D9B7D4 /* README.md in Resources */,
 				FABCBD2226B30A4200D9B7D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
