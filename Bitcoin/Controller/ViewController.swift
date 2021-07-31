@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         
         // set the ViewController class as the delegate of the currencyPicker
         currencyPicker.delegate = self
+        
+        // set the ViewController class as the delegate of the managerDelegate
+        bitcoinManager.managerDelegate = self
     }
 
    
@@ -52,24 +55,35 @@ extension ViewController: UIPickerViewDataSource {
  
     
 }
-
+// added extension with protocol UIPickerViewDataSource to delegate pickerView
 extension ViewController: UIPickerViewAccessibilityDelegate {
     // picked the title from currencyArray
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        print(bitcoinManager.currencyArray[row])
-        
+ 
         // return current row in array
         return bitcoinManager.currencyArray[row]
        
     }
-    // created function to get data of selected row
+    // picked row by user
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        
-        let selectRow = bitcoinManager.currencyArray[row]
-        bitcoinManager.getBitcoinPrice(selectRow)
+        // dispatch selected data row to BitcoinManager struct
+        let selectedRow = bitcoinManager.currencyArray[row]
+        bitcoinManager.getBitcoinPrice(selectedRow)
     }
-    
 
     
+}
+
+// extension to receive data delegated from Manager struct
+extension ViewController: ManagerDelegate {
+    func didUpdateCurrency(_ currency: Float, _ assetId: String) {
+        
+        // Dispatch Queue to avoid frozen app state mandatory
+        DispatchQueue.main.async { [self] in
+            sumLabel.text = String(format: "%.2f", currency) // transmitted currency from BitconManager
+            currencyLabel.text = assetId                     // transmitted asset id from BitconManager
+        }
+    }
+   
 }
